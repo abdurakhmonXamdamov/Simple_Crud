@@ -1,5 +1,5 @@
-from django.apps import AppConfig
+from django.apps import AppConfig  # type: ignore[import-not-found]
 
 
 class PostsConfig(AppConfig):
-    name = 'posts'
+    name = 'apps.posts'
