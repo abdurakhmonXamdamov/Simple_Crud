@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,6 +78,37 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Blog Admin",
+    "site_header": "Blog",
+    "site_brand": "Blog Admin",
+    "welcome_sign": "Welcome to Blog Admin",
+    "show_sidebar": True,
+    "navigation_expanded": True,
+
+    "icons": {
+        "accounts.User": "fas fa-users",
+        "posts.Post": "fas fa-newspaper",
+        "posts.Category": "fas fa-tags",
+        "posts.Like": "fas fa-heart",
+        "comments.Comment": "fas fa-comments",
+    },
+
+    "theme": "darkly",           
+    "dark_mode_theme": "darkly", 
+
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+    "dark_mode_theme": "darkly",
+    "navbar": "navbar-dark",
+    "no_navbar_border": True,
+    "sidebar": "sidebar-dark-primary",
+    "accent": "accent-primary",
+}
 
 
 # Database
