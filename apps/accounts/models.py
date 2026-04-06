@@ -9,7 +9,7 @@ class User(AbstractUser):
         ('M', 'Male'),
         ('F', 'Female')
     ]
-
+    
     phone = models.CharField(max_length=15, unique=True, null=True, blank=True)
     photo = models.ImageField(upload_to='photos/', null=True, blank=True)
     bio = models.TextField(null=True, blank=True)

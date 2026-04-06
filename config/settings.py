@@ -84,7 +84,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "Blog Admin",
     "site_header": "Blog",
     "site_brand": "Blog Admin",
-    "welcome_sign": "Welcome to Blog Admin",
+    "welcome_sign": "Welcome to Blog Adyuva",
     "show_sidebar": True,
     "navigation_expanded": True,
 
