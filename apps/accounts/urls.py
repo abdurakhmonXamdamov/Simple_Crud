@@ -1,6 +1,11 @@
-from django.urls import path
-from .views import UserCreateAPIView
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import UserViewSet
+
+
+router = DefaultRouter()
+router.register(r'users', UserViewSet, basename='user')
 
 urlpatterns = [
-    path('users/', UserCreateAPIView.as_view(), name='product-list'),
+    path('', include(router.urls)),
 ]
