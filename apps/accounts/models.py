@@ -7,7 +7,7 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
 
     class GenderChoice(models.TextChoices):
-        M = 'Male',
+        M = 'Male'
         F = 'Female'
 
     
@@ -18,6 +18,7 @@ class User(AbstractUser):
             max_length=10, 
             choices=GenderChoice.choices, 
             blank=True,
+            default = 'M'
         )
     birth_date = models.DateField(null=True, blank=True)
 
